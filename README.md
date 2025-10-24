@@ -5,6 +5,7 @@
 
 ### 1. Crear el entorno virtual
 python -m venv venv
+
 venv\Scripts\activate
 
 ### 2. Instalar dependencias
@@ -12,6 +13,7 @@ pip install django
 
 ### 3. Aplicar migraciones
 python manage.py makemigrations
+
 python manage.py migrate
 
 ### 4.Crear superusuario

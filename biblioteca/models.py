@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.exceptions import ValidationError
-
+from django.core.validators import MinValueValidator, MaxValueValidator
 # Create your models here.
 class Author(models.Model):
     name = models.CharField(max_length=100)
@@ -30,6 +30,10 @@ class Review(models.Model):
     text = models.TextField()
     rating = models.IntegerField()
     date = models.DateField(auto_now_add=True)
+
+    rating = models.FloatField(
+        validators=[MinValueValidator(0.0), MaxValueValidator(5.0)]
+    )
 
     def clean(self):
         if not (1 <= self.rating <= 5):

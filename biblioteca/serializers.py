@@ -8,7 +8,11 @@ class AuthorSerializer(serializers.ModelSerializer):
 
 class BookSerializer(serializers.ModelSerializer):
     recent_reviews=serializers.SerializerMethodField()
-    author_name=serializers.ReadOnlyFields(source="author")
+    author_name=serializers.ReadOnlyFields(source="author.name")
+
+    class Meta:
+        model=Book
+        fields='__all__'
 
     def get_recent_views(self, obj):
         reviews=obj.review_set.order_by('-date')[:5]

@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework.routers import DefaultRouter
+from biblioteca.views import AuthorViewSet, BookViewSet, ReviewViewSet
+
+router=DefaultRouter()
+router.register(r'authors', AuthorViewSet)
+router.register(r'books', BookViewSet)
+router.register(r'reviews', ReviewViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('api/', admin.site.urls),
 ]

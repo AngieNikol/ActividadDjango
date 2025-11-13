@@ -35,9 +35,9 @@ class Review(models.Model):
         validators=[MinValueValidator(0.0), MaxValueValidator(5.0)]
     )
 
-    def clean(self):
-        if not (1 <= self.rating <= 5):
-            raise ValidationError('La calificación debe estar entre 1 y 5.')
+    #def clean(self):
+        #if not (1 <= self.rating <= 5):
+            #raise ValidationError('La calificación debe estar entre 1 y 5.')*/
 
     def __str__(self):
         return f"{self.book.title} - {self.rating}/5"

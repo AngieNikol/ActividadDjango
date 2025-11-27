@@ -14,7 +14,7 @@ class AuthorViewSet(viewsets.ModelViewSet):
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
-    filter_backends = ['author']
+    #filter_backends = ['author']
     filterset_fields = ['author', 'published_date']
     ordering_fields = ['published_date', 'title']
 
@@ -32,7 +32,7 @@ class BookViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def average_rating(self, request, pk=None):
         book = self.get_object()
-        avg_rating = book.reviews.aggregate(average=Avg('rating'))['promedio']
+        avg_rating = book.reviews.aggregate(average=Avg('rating'))['average']
         return Response({'book': book.title, 'average_rating': avg_rating})
 
 class ReviewViewSet(viewsets.ModelViewSet):

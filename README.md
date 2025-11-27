@@ -41,3 +41,21 @@ python manage.py shell
 
 ### Review
 [![Captura-de-pantalla-2025-10-21-183542.png](https://i.postimg.cc/hj9kK4vr/Captura-de-pantalla-2025-10-21-183542.png)](https://postimg.cc/S2xTrhW2)
+
+### Codigo DRF
+[![Captura_de_pantalla_2025_11_27_172623.png](https://i.postimg.cc/gcTXwtHG/Captura_de_pantalla_2025_11_27_172623.png)](https://postimg.cc/w3DTZVrr)
+
+[![Captura_de_pantalla_2025_11_27_172604.png](https://i.postimg.cc/mZ5zcpy2/Captura_de_pantalla_2025_11_27_172604.png)](https://postimg.cc/xqLThRZW)
+
+[![Captura_de_pantalla_2025_11_27_172555.png](https://i.postimg.cc/L6gqjkx6/Captura_de_pantalla_2025_11_27_172555.png)](https://postimg.cc/561NVzcZ)
+
+[![Captura_de_pantalla_2025_11_27_172518.png](https://i.postimg.cc/wTRtD5wz/Captura_de_pantalla_2025_11_27_172518.png)](https://postimg.cc/QHsx37LY)
+
+### API
+[![Captura_de_pantalla_2025_11_27_170252.png](https://i.postimg.cc/28Lqnd0Q/Captura_de_pantalla_2025_11_27_170252.png)](https://postimg.cc/9rVFh950)
+
+[![Captura_de_pantalla_2025_11_27_171117.png](https://i.postimg.cc/dV02MZ6K/Captura_de_pantalla_2025_11_27_171117.png)](https://postimg.cc/crVgwHPD)
+
+[![Captura_de_pantalla_2025_11_27_171022.png](https://i.postimg.cc/13zGxVBX/Captura_de_pantalla_2025_11_27_171022.png)](https://postimg.cc/QHR91tRZ)
+
+[![Captura_de_pantalla_2025_11_27_170851.png](https://i.postimg.cc/CxKGyn7K/Captura_de_pantalla_2025_11_27_170851.png)](https://postimg.cc/ykwgcdwq)
